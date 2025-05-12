@@ -1,0 +1,28 @@
+{
+    "data_preprocessing": {
+        "initial_samples": 9503,
+        "final_features": 27,
+        "outlier_method": "IsolationForest (5%)",
+        "transformations": [
+            "PowerTransformer",
+            "StandardScaler"
+        ]
+    },
+    "model": {
+        "architecture": "AttentionNN(256-128-8)",
+        "optimizer": "AdamW (lr=0.001, wd=0.01)",
+        "training_samples": 6081,
+        "validation_accuracy": 0.9907955292570677,
+        "test_accuracy": 0.9884928984744871,
+        "output_targets": [
+            "Cu_ppm_label",
+            "Ni_ppm_label",
+            "Co_ppm_label",
+            "Zn_ppm_label",
+            "La_ppm_label",
+            "Ce_ppm_label",
+            "Au_ppb_label",
+            "Pt_ppb_label"
+        ]
+    }
+}
